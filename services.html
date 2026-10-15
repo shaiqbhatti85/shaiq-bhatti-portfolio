@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Services | Shaiq Bhatti</title>
+    <meta name="description"
+        content="Shaiq Bhatti is an AI/ML engineer in Lahore building computer vision, RAG and LLM systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body data-page="services"><canvas id="scene"></canvas>
+    <div class="scrim"></div>
+    <div id="reticle"></div>
+    <div id="fade"></div>
+    <header><a class="mark" href="index.html" aria-label="Shaiq Bhatti — Home">
+            <img src="assets/images/logo.png" alt="Shaiq Bhatti">
+        </a>
+        <nav><a data-p="home" href="index.html">About</a><a data-p="services" href="services.html">Services</a><a
+                data-p="projects" href="projects.html">Projects</a><a data-p="experience"
+                href="experience.html">Experience</a><a data-p="contact" href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <h1 class="page-t">What I can build for you</h1>
+        <p class="lede">Six kinds of work, each backed by something I have already shipped or tested.</p>
+        <section class="rows" style="margin-top:50px">
+            <article>
+                <h3>Computer vision systems</h3>
+                <p>Real-time detection and tracking on live video, tuned for speed and evaluated on real test footage so
+                    false alarms stay low.</p><span class="tools">YOLO, PyTorch, CUDA, OpenCV</span>
+            </article>
+            <article>
+                <h3>Document question answering</h3>
+                <p>Upload PDFs, ask questions, and get answers that cite the exact page and carry a confidence score.
+                    Tables are searchable for exact numbers.</p><span class="tools">RAG, Chroma, sentence-transformers,
+                    LangChain</span>
+            </article>
+            <article>
+                <h3>LLM assistants and chatbots</h3>
+                <p>Voice or chat assistants that recognise what a person wants, such as a medication reminder or an
+                    emergency, and respond with validated answers.</p><span class="tools">Qwen, Hugging Face, intent
+                    classification</span>
+            </article>
+            <article>
+                <h3>OCR and image processing</h3>
+                <p>Pull text out of images and scanned documents in many formats.</p><span class="tools">Python,
+                    OpenCV</span>
+            </article>
+            <article>
+                <h3>AI backends and deployment</h3>
+                <p>Trained models wrapped in tested APIs with a database behind them, so the model is usable by other
+                    software.</p><span class="tools">FastAPI, PostgreSQL, pytest</span>
+            </article>
+            <article>
+                <h3>Data analysis and dashboards</h3>
+                <p>Cleaning raw data, finding trends with statistics, and presenting them in dashboards that
+                    non-technical teams can read.</p><span class="tools">Python, Pandas, Tableau</span>
+            </article>
+        </section>
+    </main>
+    <footer class="hud"><span id="h-clock"></span><span id="h-xy"></span><span id="h-fps"></span><span
+            id="h-sc"></span><span id="h-det"></span></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/scene.js"></script>
+    <script src="assets/js/hud.js"></script>
+    <script src="assets/js/transitions.js"></script>
+</body>
+
+</html>

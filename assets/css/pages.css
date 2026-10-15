@@ -1,0 +1,371 @@
+h1 {
+    font: 400 clamp(60px, 10vw, 128px)/.92 var(--serif);
+    letter-spacing: -.02em
+}
+
+h1 span {
+    display: block;
+    overflow: hidden
+}
+
+h1 span i {
+    display: block;
+    font-style: normal;
+    animation: rise 1s cubic-bezier(.2, .8, .2, 1) both
+}
+
+h1 span:nth-child(2) i {
+    animation-delay: .12s
+}
+
+@keyframes rise {
+    from {
+        transform: translateY(105%)
+    }
+}
+
+h2 {
+    font: 400 clamp(30px, 4vw, 44px)/1.1 var(--serif);
+    margin-bottom: 28px
+}
+
+.page-t {
+    font: 400 clamp(44px, 7vw, 84px)/1 var(--serif);
+    letter-spacing: -.015em;
+    margin-bottom: 22px
+}
+
+.role {
+    margin-top: 26px;
+    color: var(--teal);
+    font-size: 18px
+}
+
+.lede {
+    font: 400 clamp(21px, 2.4vw, 27px)/1.4 var(--serif);
+    margin: 22px 0 18px;
+    max-width: 30em
+}
+
+p {
+    max-width: 36em;
+    color: #c3d0cf
+}
+
+.hero p+p {
+    margin-top: 12px
+}
+
+.proof {
+    margin: 34px 0;
+    padding: 18px 0;
+    border-block: 1px solid var(--line);
+    color: var(--ink);
+    max-width: 36em
+}
+
+.proof b {
+    color: var(--amber);
+    font-weight: 600
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid var(--amber);
+    background: var(--amber);
+    color: #1a1205;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2px;
+    margin: 6px 12px 6px 0;
+    transition: transform .2s
+}
+
+.btn:hover {
+    transform: translateY(-2px)
+}
+
+.btn.ghost {
+    background: none;
+    color: var(--ink);
+    border-color: var(--line)
+}
+
+.btn.ghost:hover {
+    border-color: var(--amber)
+}
+
+section+section {
+    margin-top: 90px
+}
+
+.skills dl {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 12px 24px;
+    font-size: 16px
+}
+
+dt {
+    color: var(--mute)
+}
+
+.rows>article {
+    padding: 30px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    gap: 8px 40px
+}
+
+.rows>article:last-child {
+    border-bottom: 1px solid var(--line)
+}
+
+.rows h3 {
+    font: 500 25px/1.2 var(--serif)
+}
+
+.rows .tools {
+    grid-column: 2;
+    color: var(--teal);
+    font-size: 14.5px
+}
+
+.rows .res {
+    grid-column: 2;
+    color: var(--ink)
+}
+
+.rows a.gh {
+    grid-column: 2;
+    color: var(--amber);
+    text-underline-offset: 4px;
+    width: max-content
+}
+
+.tl {
+    border-left: 1px solid var(--line);
+    padding-left: 32px;
+    margin-left: 4px
+}
+
+.tl article {
+    position: relative;
+    padding-bottom: 44px
+}
+
+.tl article::before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 9px;
+    width: 9px;
+    height: 9px;
+    background: var(--amber);
+    border-radius: 50%
+}
+
+.tl time {
+    display: block;
+    color: var(--mute);
+    font-size: 14px
+}
+
+.tl h3 {
+    font: 500 26px/1.2 var(--serif);
+    margin: 4px 0 2px
+}
+
+.tl .where {
+    color: var(--teal);
+    margin-bottom: 10px
+}
+
+.tl ul {
+    padding-left: 18px;
+    max-width: 36em;
+    color: #c3d0cf
+}
+
+.tl li {
+    margin-bottom: 6px
+}
+
+.contact {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    max-width: 36em
+}
+
+.contact li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line)
+}
+
+.contact li:last-child {
+    border-bottom: 1px solid var(--line)
+}
+
+.contact span {
+    color: var(--mute)
+}
+
+.contact a {
+    text-underline-offset: 4px
+}
+
+.contact a:hover {
+    color: var(--amber)
+}
+
+@media(max-width:700px) {
+    .rows>article {
+        grid-template-columns: 1fr
+    }
+
+    .rows .tools,
+    .rows .res,
+    .rows a.gh {
+        grid-column: 1
+    }
+
+    .skills dl {
+        grid-template-columns: 1fr;
+        gap: 2px
+    }
+
+    .skills dd {
+        margin-bottom: 12px
+    }
+}
+
+@media (max-width: 700px) {
+    .contact li {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .contact a {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Homepage name */
+.hero h1 {
+    font-size: clamp(56px, 9vw, 112px);
+    line-height: 1.12;
+}
+
+.hero h1 span {
+    padding-top: 0.12em;
+}
+
+.hero h1 span i {
+    padding-bottom: 0.05em;
+}
+
+/* Contact information left, message panel right */
+.contact-layout {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 460px);
+  gap: clamp(32px, 5vw, 80px);
+  align-items: start;
+}
+
+.contact-info {
+  min-width: 0;
+}
+
+.message-panel {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 36px);
+  border: 1px solid rgba(95, 201, 193, 0.25);
+  border-radius: 22px;
+
+  /* Translucent surface: animation remains visible */
+  background: rgba(8, 20, 26, 0.58);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.message-panel h2 {
+  margin-bottom: 12px;
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.message-intro {
+  margin-bottom: 26px;
+  font-size: 15px;
+}
+
+.message-panel label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message-panel input,
+.message-panel textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 20px;
+  padding: 13px 15px;
+
+  background: rgba(8, 20, 26, 0.48);
+  border: 1px solid rgba(230, 236, 234, 0.22);
+  border-radius: 10px;
+
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+
+.message-panel textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.message-panel input::placeholder,
+.message-panel textarea::placeholder {
+  color: #a5b6b8;
+}
+
+.message-panel input:focus-visible,
+.message-panel textarea:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-color: var(--teal);
+}
+
+.message-panel .btn {
+  width: 100%;
+  margin: 4px 0 14px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.message-note {
+  font-size: 13px;
+  color: #b5c5c7;
+}
+
+/* Stack on tablets and phones */
+@media (max-width: 1000px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

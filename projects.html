@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Projects | Shaiq Bhatti</title>
+    <meta name="description"
+        content="Shaiq Bhatti is an AI/ML engineer in Lahore building computer vision, RAG and LLM systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body data-page="projects"><canvas id="scene"></canvas>
+    <div class="scrim"></div>
+    <div id="reticle"></div>
+    <div id="fade"></div>
+    <header><a class="mark" href="index.html" aria-label="Shaiq Bhatti — Home">
+  <img src="assets/images/logo.png" alt="Shaiq Bhatti">
+</a>
+        <nav><a data-p="home" href="index.html">About</a><a data-p="services" href="services.html">Services</a><a
+                data-p="projects" href="projects.html">Projects</a><a data-p="experience"
+                href="experience.html">Experience</a><a data-p="contact" href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <h1 class="page-t">Projects</h1>
+        <p class="lede">Source code lives on GitHub. Each project below links to my profile until I pin the repository.
+        </p>
+        <section class="rows" style="margin-top:50px">
+            <article>
+                <h3>LEO, home assistant for the elderly</h3>
+                <p>A webcam-based fall-detection and care assistant, built as a final year project in a team of three. I
+                    led the computer vision design and owned the detection pipeline, backend and conversational AI.</p>
+                <span class="res">A six-signal verification step (balance, outline, blur, posture, trajectory, pose) and
+                    caregiver-set safe zones cut false alarms. Result: 94% recall, 98% specificity, 93.1% F1, alerts in
+                    under 2 seconds, and a 4.4/5 satisfaction rating from elderly participants.</span><span
+                    class="tools">PyTorch, YOLO, OpenCV, FastAPI, PostgreSQL, Qwen</span><a class="gh"
+                    href="https://github.com/shaiqbhatti85/LEO-AI-Elderly-Care-Assistant" target="_blank"
+                    rel="noopener">View on GitHub (external)</a>
+            </article>
+            <article>
+                <h3>Document Q&amp;A and reasoning pipeline</h3>
+                <p>A personal project that ingests PDFs and text files, keeps track of the page each fact came from, and
+                    answers questions with citations.</p>
+                <span class="res">An AST-whitelisted calculator handles numeric questions safely, each answer carries a
+                    retrieval-based confidence score, and an automated pytest suite checks ingestion, extraction and
+                    ranking.</span><span class="tools">Python, Chroma, sentence-transformers, FastAPI, pytest</span><a
+                    class="gh" href="https://github.com/shaiqbhatti85/Multimodal-intelligence" target="_blank"
+                    rel="noopener">View on GitHub
+                    (external)</a>
+            </article>
+            <article>
+                <h3>Financial analysis chatbot</h3>
+                <p>A prototype from my BCG X internship that answers set questions about Apple, Microsoft and Tesla,
+                    including revenue and net-income comparisons.</p>
+                <span class="res">Query normalisation, rule-based handling and response validation, with a six-case test
+                    suite where all tests pass.</span><span class="tools">Python</span><a class="gh"
+                    href="https://github.com/shaiqbhatti85/financial-analysis-chatbot" target="_blank"
+                    rel="noopener">View on GitHub (external)</a>
+            </article>
+            <article>
+                <h3>OCR system</h3>
+                <p>Detects and extracts text from images and scanned documents across formats.</p><span
+                    class="tools">Python, OpenCV</span><a class="gh" href="https://github.com/shaiqbhatti85"
+                    target="_blank" rel="noopener">View on GitHub (external)</a>
+            </article>
+            <article>
+                <h3>Object detection system</h3>
+                <p>Identifies, classifies and tracks objects in video streams in real time.</p><span class="tools">YOLO,
+                    pre-trained deep learning models</span><a class="gh" href="https://github.com/shaiqbhatti85"
+                    target="_blank" rel="noopener">View on GitHub (external)</a>
+            </article>
+        </section>
+    </main>
+    <footer class="hud"><span id="h-clock"></span><span id="h-xy"></span><span id="h-fps"></span><span
+            id="h-sc"></span><span id="h-det"></span></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/scene.js"></script>
+    <script src="assets/js/hud.js"></script>
+    <script src="assets/js/transitions.js"></script>
+</body>
+
+</html>

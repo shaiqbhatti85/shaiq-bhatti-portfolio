@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Summary | Shaiq Bhatti</title>
+    <meta name="description"
+        content="Shaiq Bhatti is an AI/ML engineer in Lahore building computer vision, RAG and LLM systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body data-page="home"><canvas id="scene"></canvas>
+    <div class="scrim"></div>
+    <div id="reticle"></div>
+    <div id="fade"></div>
+    <header><a class="mark" href="index.html" aria-label="Shaiq Bhatti — Home">
+            <img src="assets/images/logo.png" alt="Shaiq Bhatti">
+        </a>
+        <nav><a data-p="home" href="index.html">About</a><a data-p="services" href="services.html">Services</a><a
+                data-p="projects" href="projects.html">Projects</a><a data-p="experience"
+                href="experience.html">Experience</a><a data-p="contact" href="contact.html">Contact</a></nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1><span><i>Shaiq</i></span><span><i>Bhatti</i></span></h1>
+            <p class="role">AI/ML engineer in Lahore, Pakistan</p>
+            <p class="lede">I build machine learning systems that watch, read and answer, and I test them on real data
+                before calling them done.</p>
+            <p>My work covers machine learning, deep learning, generative AI, RAG and computer vision in Python, from
+                data processing and training to evaluation and a deployed API. I finished my BS in Computer Science at
+                Government College University, Lahore, in 2026.</p>
+            <div class="proof">My final year project, a fall-detection assistant for elderly people, reached <b>94%
+                    recall</b> and a <b>93.1% F1-score</b> on 250 real-world videos, running at <b>35+ FPS</b>.</div>
+            <a class="btn ghost" href="contact.html">Discuss a project</a>
+        </section>
+        <section class="skills">
+            <h2>What I work with</h2>
+            <dl>
+                <dt>AI and ML</dt>
+                <dd>Machine learning, deep learning, generative AI, LLMs, RAG, LangChain, AI agents</dd>
+                <dt>Computer vision</dt>
+                <dd>Object detection and tracking, image classification, OCR, YOLO</dd>
+                <dt>Libraries</dt>
+                <dd>PyTorch, TensorFlow, Hugging Face, scikit-learn, OpenCV, NumPy, Pandas</dd>
+                <dt>Backend</dt>
+                <dd>Python, FastAPI, Django, REST APIs, PostgreSQL, MongoDB, SQL, Git, C++</dd>
+            </dl>
+        </section>
+    </main>
+    <footer class="hud"><span id="h-clock"></span><span id="h-xy"></span><span id="h-fps"></span><span
+            id="h-sc"></span><span id="h-det"></span></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="assets/js/scene.js"></script>
+    <script src="assets/js/hud.js"></script>
+    <script src="assets/js/transitions.js"></script>
+</body>
+
+</html>
