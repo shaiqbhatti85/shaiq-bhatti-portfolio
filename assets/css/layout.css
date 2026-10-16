@@ -313,3 +313,9 @@ header nav a:focus-visible {
         transform: none;
     }
 }
+
+#reticle {
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+}
